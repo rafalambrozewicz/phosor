@@ -61,7 +61,8 @@ class ArgsParser(private val thenDo: (simpleDateFormat: SimpleDateFormat,
             .optional()
 
     override fun run() {
-        val dateFormatter = SimpleDateFormat(pattern).apply { timeZone = TimeZone.getDefault() }
+        val dateFormatter = SimpleDateFormat(pattern, Locale.US)
+                .apply { timeZone = TimeZone.getDefault() }
         val directory = maybeDirectory ?: File(".")
 
         thenDo.invoke(dateFormatter, directory, verbose)
