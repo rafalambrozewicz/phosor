@@ -12,6 +12,7 @@ repositories {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("com.github.ajalt:clikt:2.3.0")
+    implementation ("com.drewnoakes:metadata-extractor:2.12.0")
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
