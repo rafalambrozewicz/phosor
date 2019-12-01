@@ -23,7 +23,7 @@ class ArgsParser(private val thenDo: (simpleDateFormat: SimpleDateFormat,
     }
 
     companion object {
-        val ALLOWED_PATTERN_CHARACTERS = "-_.[] GyYMwWDdFEu".toCharArray()
+        val ALLOWED_PATTERN_CHARACTERS = "-_.[]GyYMwWDdFEu".toCharArray()
         const val DEFAULT_CATALOG_NAME_FORMAT = "[YYYY-MM-dd]";
 
         object Error {
