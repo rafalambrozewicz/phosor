@@ -75,7 +75,8 @@ Arguments:
 Process finished with exit code 0
 ~~~
 
-###Example
+### Example
+
 Consider you have number of photos in `/home/user/photos` directory and would like to move them to catalogs name 
 like `YYYY.MM.dd`:
 1. Check contents of `/home/user/photos`:
