@@ -35,7 +35,7 @@ class ArgsParser(private val thenDo: (simpleDateFormat: SimpleDateFormat,
 
     private val pattern: String by option(
             "-p", "--pattern",
-            help = CliArgsDesc.catalogNameFormat(DEFAULT_CATALOG_NAME_FORMAT, ALLOWED_PATTERN_CHARACTERS))
+            help = CliArgsDesc.catalogNameFormat)
             .default(DEFAULT_CATALOG_NAME_FORMAT)
             .validate {
                 require(pattern.isNotBlank()) { Error.patternEmpty() }
@@ -53,10 +53,10 @@ class ArgsParser(private val thenDo: (simpleDateFormat: SimpleDateFormat,
                 }
             }
 
-    private val verbose: Boolean by option("-v", "--verbose", help = CliArgsDesc.verbose())
+    private val verbose: Boolean by option("-v", "--verbose", help = CliArgsDesc.verbose)
             .flag()
 
-    private val maybeDirectory: File? by argument("dir", help = CliArgsDesc.workingDirectory())
+    private val maybeDirectory: File? by argument("dir", help = CliArgsDesc.workingDirectory)
             .file(exists = true, fileOkay = false, folderOkay = true, readable = true, writable = true )
             .optional()
 

@@ -54,25 +54,24 @@ Usage: phosor [OPTIONS] [dir]
 
 Options:
   --version           Show the version and exit
-  -p, --pattern TEXT  Date pattern used to name catalogs, by default equlas to
-                      '[YYYY-MM-dd]' that would create catalog named like
-                      '[2019-12-01]' for photo taken today. Pattern can
-                      contain only the following characters: '-', '_', '.',
-                      '[', ']', ' ', 'G', 'y', 'Y', 'M', 'w', 'W', 'D', 'd',
-                      'F', 'E', 'u', where: 'G' Era designator (ex. AD), 'y'
-                      Year (ex. 1996; 96), 'Y' Week year (ex. 2009; 09), 'M'
-                      Month in year (ex. July; Jul; 07), 'w' Week in year (ex.
-                      27), 'W' Week in month (ex. 2), 'D' Day in year (ex.
-                      189), 'd' Day in month (ex. 10), 'F' Day of week in
-                      month (ex. 2 'E' Day name in week (ex. Tuesday; Tue),
-                      'u' Day number of week (1 = Monday, ..., 7 = Sunday)
+  -p, --pattern TEXT  Date pattern used to name catalogs, by default equals to
+                      '[YYYY-MM-dd]' where 'yyyy' is year (ex. 2019), 'MM' is
+                      month in year (ex. 12), 'dd' is day in month (ex. 02).
+                      Pattern can contain only the following characters: '-',
+                      '_', '.', '[', ']', 'G', 'y', 'Y', 'M', 'w', 'W', 'D',
+                      'd', 'F', 'E', 'u', where: 'G' is Era designator (ex.
+                      AD), 'y' is Year (ex. 1996; 96), 'Y' is Week year (ex.
+                      2009; 09), 'M' is Month in year (ex. July; Jul; 07), 'w'
+                      is Week in year (ex. 27), 'W' is Week in month (ex. 2),
+                      'D' is Day in year (ex. 189), 'd' is Day in month (ex.
+                      10), 'F' is Day of week in month (ex. 2), 'E' is Day
+                      name in week (ex. Tuesday; Tue), 'u' is Day number of
+                      week (1 = Monday, ..., 7 = Sunday)
   -v, --verbose       Enable verbose output
   -h, --help          Show this message and exit
 
 Arguments:
   dir  Working directory, current directory by default
-
-Process finished with exit code 0
 ~~~
 
 ### Example
