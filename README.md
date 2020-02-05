@@ -1,4 +1,6 @@
-# Phosor
+<p align="center">
+  <img src="promo/logo.png" alt="Phosor"/>
+</p>
 
 Phosor is a simple, command line program written in Kotlin, that groups photos by creation date.
 
